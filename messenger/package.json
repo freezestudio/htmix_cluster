@@ -1,0 +1,40 @@
+{
+  "name": "messenger",
+  "version": "0.1.0",
+  "description": "node message push",
+  "main": "start.ts",
+  "scripts": {
+    "test": "ts-node node_modules/tape/bin/tape test/*.ts",
+    "start": "ts-node start.ts",
+    "ify": "browserify -p tinyify ./build/start.js -o ./dist/messenger.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freezestudio/htmix_cluster.git"
+  },
+  "keywords": [
+    "node",
+    "msg",
+    "push"
+  ],
+  "author": "freezestudio",
+  "license": "MIT",
+  "dependencies": {
+    "bufferutil": "^4.0.0",
+    "js-base64": "^2.4.6",
+    "moment": "^2.22.2",
+    "mysql2": "^1.6.1",
+    "utf-8-validate": "^5.0.1",
+    "ws": "^5.2.2"
+  },
+  "devDependencies": {
+    "@types/js-base64": "^2.3.1",
+    "@types/tape": "^4.2.32",
+    "@types/ws": "^5.1.2",
+    "tinyify": "^2.4.3",
+    "browserify": "^16.2.2",
+    "tape": "^4.9.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  }
+}

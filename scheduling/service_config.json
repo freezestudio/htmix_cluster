@@ -1,0 +1,28 @@
+{
+    "cluster":{
+        "host": "0.0.0.0",
+        "port": 3000
+    },
+    
+    "web":{
+        "host": "0.0.0.0",
+        "port": 3001
+    },
+    
+    "ws":{
+       "host": "0.0.0.0",
+        "port": 3002
+    },
+
+    "mysql":{
+        "port": 3306,
+        "host": "0.0.0.0",
+        "user": "your name",
+        "password": "your password",
+        "database": "your database",
+        "dateStrings": true
+    },
+    "fixed": {
+        "host": "0.0.0.0"
+    }
+}

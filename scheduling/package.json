@@ -1,0 +1,41 @@
+{
+  "name": "scheduling",
+  "version": "0.1.0",
+  "description": "the server for scheduling",
+  "main": "start.ts",
+  "scripts": {
+    "test": "ts-node node_modules/tape/bin/tape test/**/*.ts",
+    "start": "ts-node start.ts",
+    "ify": "browserify -p tinyify ./build/start.js -o ./dist/scheduling.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freezestudio/htmix_cluster.git"
+  },
+  "keywords": [
+    "typescript",
+    "scheduling",
+    "http",
+    "proxy"
+  ],
+  "author": "freezestudio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freezestudio/htmix_cluster/issues"
+  },
+  "homepage": "https://github.com/freezestudio/htmix_cluster#readme",
+  "dependencies": {
+    "http-proxy": "^1.17.0",
+    "js-base64": "^2.4.6"
+  },
+  "devDependencies": {
+    "@types/http-proxy": "^1.16.2",
+    "@types/js-base64": "^2.3.1",
+    "@types/tape": "^4.2.32",
+    "tinyify": "^2.4.3",
+    "browserify": "^16.2.2",
+    "tape": "^4.9.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  }
+}

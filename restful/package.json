@@ -1,0 +1,47 @@
+{
+  "name": "restful",
+  "version": "0.1.0",
+  "description": "node rest mysql",
+  "main": "start.ts",
+  "scripts": {
+    "test": "ts-node node_modules/tape/bin/tape test/*.ts",
+    "start": "ts-node start.ts",
+    "loginify": "browserify -p tinyify ./build/browser/login.js -o ./static/js/login_bundle.js",
+    "indexify": "browserify -p tinyify ./build/browser/index.js -o ./static/js/index_bundle.js",
+    "ify": "browserify ./build/start.js -o ./dist/restful.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freezestudio/htmix_cluster.git"
+  },
+  "keywords": [
+    "node",
+    "rest",
+    "mysql"
+  ],
+  "author": "freezestudio",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-graceful-exit": "^0.4.1",
+    "js-base64": "^2.4.6",
+    "js-xlsx": "^0.8.22",
+    "moment": "^2.22.2",
+    "multiparty": "^4.2.0",
+    "mysql2": "^1.6.1",
+    "path-to-regexp": "^2.2.1",
+    "wangeditor": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/js-base64": "^2.3.1",
+    "@types/tape": "^4.2.32",
+    "@types/multiparty": "0.0.31",
+    "tinyify": "^2.4.3",
+    "browserify": "^16.2.2",
+    "tape": "^4.9.1",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.1"
+  }
+}
